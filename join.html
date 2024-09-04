@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link href="join.css" rel="stylesheet">
+</head>
+<body>
+    <h2> Join Membership</h2>
+    <h4>for KREAM manager </h4>
+    <div id="container">
+        <form id="form" action="#">
+            <table class="table">
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input name="id" placeholder="아이디" autocomplete="off">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td>
+                        <input type="password" name="pw1" placeholder="비밀번호">
+                    </td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td>
+                        <input type="password" name="pw2" placeholder="비밀번호 확인">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이름</th>
+                    <td>
+                        <input name="name" placeholder="성함" autocomplete="off" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>휴대전화</th>
+                    <td>
+                        <select class="phone">
+                            <option selected value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="012">012</option>
+                            <option value="017">017</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input name="phone" placeholder="ex.12345678" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>자택/회사</th>
+                    <td>
+                        <select class="tel">
+                            <option selected value="02">02</option>
+                            <option value="031">031</option>
+                            <option value="032">032</option>
+                            <option value="033">033</option>
+                            <option value="041">041</option>
+                            <option value="042">042</option>
+                            <option value="043">043</option>
+                            <option value="044">044</option>
+                            <option value="051">051</option>
+                            <option value="052">052</option>
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="061">061</option>
+                            <option value="062">062</option>
+                            <option value="063">063</option>
+                            <option value="064">064</option>
+                            <option value="070">070</option>
+                            <input name="tel" placeholder="ex.1234567">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>닉네임</th>
+                    <td>
+                        <input name="nick" placeholder="사용할 닉네임" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th>
+                    <td>
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>남자
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">여자
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <input title="이메일 주소를 작성해주세요" type="email" name="email" placeholder="example@gmail.com" autocomplete="off" required>
+                    </td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="가입" class="btn" title="가입">
+                <input type="reset" value="리셋" class="btn" title="처음으로">
+            </div>
+        </form>
+    </div>
+
+    <script src="join.js"></script>
+</body>
+</html>
